@@ -22,6 +22,7 @@ public class CommandManager {
         addCommand(new PingCommand());
         addCommand(new HelpCommand(this));
         addCommand(new PasteCommand());
+        addCommand(new KickCommand());
 
         addCommand(new JoinCommand());
         addCommand(new PlayCommand());
