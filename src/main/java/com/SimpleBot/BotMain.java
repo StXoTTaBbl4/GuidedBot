@@ -16,7 +16,9 @@ public class BotMain {
                         GatewayIntent.GUILD_VOICE_STATES,
                         GatewayIntent.GUILD_EMOJIS
                 )
-                .enableCache(CacheFlag.VOICE_STATE)
+                .enableCache(CacheFlag.VOICE_STATE,
+                             CacheFlag.MEMBER_OVERRIDES
+                )
                 .addEventListeners(new Listener())
                 .setActivity(Activity.playing("инкубаторо для бактериев\n" +
                         "~help"))

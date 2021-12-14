@@ -2,6 +2,7 @@ package com.SimpleBot;
 
 import com.SimpleBot.command.CommandContext;
 import com.SimpleBot.command.ICommand;
+import com.SimpleBot.command.commands.CellCommand;
 import com.SimpleBot.command.commands.HelpCommand;
 import com.SimpleBot.command.commands.PasteCommand;
 import com.SimpleBot.command.commands.PingCommand;
@@ -22,6 +23,7 @@ public class CommandManager {
         addCommand(new PingCommand());
         addCommand(new HelpCommand(this));
         addCommand(new PasteCommand());
+        addCommand(new CellCommand());
 
         addCommand(new JoinCommand());
         addCommand(new PlayCommand());
